@@ -6,14 +6,13 @@ require "pry"
 
 class EmailParser
 
-@@all_emails=nil
 
   def initialize(emails)
-    @@all_emails = emails
+    @emails = emails
   end
 
   def parse
-    a = @@all_emails.split(" ")
+    a = @emails.split(" ")
     # b = a.split(",")
     binding.pry
   end
