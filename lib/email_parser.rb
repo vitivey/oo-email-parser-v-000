@@ -27,6 +27,7 @@ attr_accessor :emails
       if !unique_array.include?(email)
         unique_array << email
       end
+      binding.pry
       end
       unique_array
   end
