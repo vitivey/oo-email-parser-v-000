@@ -7,7 +7,8 @@ require "pry"
 class EmailParser
 
   def parse(emails)
-    emails.split(" ")
+    a = emails.split(" ")
+    b = a.split(",")
     binding.pry
   end
 
