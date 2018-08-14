@@ -13,7 +13,7 @@ attr_accessor :emails
 
   def parse
     array = @emails.split(" ")
-    pased_array = array.collect do |email|
+    parsed_array = array.collect do |email|
       if email.include?(",")
         email.slice!(email.index(","))
         email
