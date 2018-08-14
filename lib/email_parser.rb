@@ -25,7 +25,7 @@ attr_accessor :emails
     parsed_array.collect do |email|
     unique_array << email  if parsed_array.select {|email| email}.size == 1
       end
-    
+
   end
 
 
