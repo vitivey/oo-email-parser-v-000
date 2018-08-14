@@ -21,8 +21,12 @@ attr_accessor :emails
         email
       end
       end
-    parsed_array.select {|email| email}[0]
-      end
+
+      unique_array=[]
+      parsed_array.collect do |email|
+      if !unique_array.include?(email)
+        unique_array << email
+      end    
   end
 
 
