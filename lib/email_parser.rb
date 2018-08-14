@@ -8,7 +8,7 @@ class EmailParser
 
   def parse(emails)
     a = emails.split(" ")
-    b = a.split(",")
+    # b = a.split(",")
     binding.pry
   end
 
