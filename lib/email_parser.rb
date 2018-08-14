@@ -28,4 +28,5 @@ attr_accessor :emails
       end
       end
       unique_array
+    end
 end
