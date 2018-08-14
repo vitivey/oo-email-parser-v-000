@@ -9,7 +9,7 @@ class EmailParser
 @@all_emails=nil
 
   def initialize(emails)
-    @@all_emails << emails
+    @@all_emails = emails
   end
 
   def parse
