@@ -21,7 +21,6 @@ attr_accessor :emails
         email
       end
       end
-    parsed_array.collect do |email|
     parsed_array.select {|email| email}[0]
       end
   end
