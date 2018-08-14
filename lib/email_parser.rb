@@ -20,12 +20,12 @@ attr_accessor :emails
       else
         email
       end
-    end
+      end
     unique_array=[]
     parsed_array.collect do |email|
     unique_array << email  if parsed_array.select {|email| email}.size == 1
       end
-    end
+    
   end
 
 
