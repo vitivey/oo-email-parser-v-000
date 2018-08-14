@@ -20,7 +20,6 @@ attr_accessor :emails
       else
         email
       end
-      end
 
       unique_array=[]
       parsed_array.collect do |email|
