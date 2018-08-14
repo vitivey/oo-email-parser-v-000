@@ -14,7 +14,11 @@ attr_accessor :emails
   def parse
     array = @emails.split(" ")
     pased_array = array.collect do |email|
-      email.slice!(email.index(",")) if email.include?(",")
+      if email.include?(",")
+        email.slice!(email.index(",")) 
+      else
+        email
+      end
     end
     # b = a.split(",")
     # binding.pry
