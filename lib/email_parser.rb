@@ -6,7 +6,7 @@ require "pry"
 
 class EmailParser
 
-@@all_emails
+@@all_emails=[]
 
   def initialize(emails)
     @@all_emails << emails
