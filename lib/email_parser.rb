@@ -23,7 +23,7 @@ attr_accessor :emails
       end
     unique_array=[]
     parsed_array.collect do |email|
-    unique_array << email  if parsed_array.select {|email| email}.size == 1
+    unique_array << parsed_array.select {|email| email}[0]
     binding.pry
       end
     unique_array
