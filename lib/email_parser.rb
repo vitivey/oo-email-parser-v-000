@@ -26,6 +26,7 @@ attr_accessor :emails
       parsed_array.collect do |email|
       if !unique_array.include?(email)
         unique_array << email
-      end    
       end
+      end
+      unique_array
 end
