@@ -27,7 +27,5 @@ attr_accessor :emails
       if !unique_array.include?(email)
         unique_array << email
       end    
-  end
-
-
+      end
 end
