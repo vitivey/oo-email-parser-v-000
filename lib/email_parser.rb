@@ -6,6 +6,11 @@ require "pry"
 
 class EmailParser
 
+@@all_emails
+  def initialize(emails)
+    @@all_emails << emails
+  end
+
   def parse(emails)
     a = emails.split(" ")
     # b = a.split(",")
