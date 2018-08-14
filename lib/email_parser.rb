@@ -12,8 +12,8 @@ class EmailParser
     @@all_emails << emails
   end
 
-  def parse(emails)
-    a = emails.split(" ")
+  def parse
+    a = @@all_emails.split(" ")
     # b = a.split(",")
     binding.pry
   end
