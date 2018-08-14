@@ -21,12 +21,9 @@ attr_accessor :emails
         email
       end
       end
-    unique_array=[]
     parsed_array.collect do |email|
-    unique_array << parsed_array.select {|email| email}[0]
-    binding.pry
+    parsed_array.select {|email| email}[0]
       end
-    unique_array
   end
 
 
