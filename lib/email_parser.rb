@@ -15,7 +15,8 @@ attr_accessor :emails
     array = @emails.split(" ")
     pased_array = array.collect do |email|
       if email.include?(",")
-        email.split(",")
+        email.slice!(email.index(","))
+        email
       else
         email
       end
